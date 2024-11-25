@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="UTF-8"> 
+        <meta name = "author" content="Omar Aqaileh">
+        <meta name = "description" content="This is a website for a taco shop">
+        <title>Carlos' Taco Shop</title>
+        <link rel="stylesheet" href="main.css" type = text/css>
+
+    </head>
+
+    <body>
+        <header > 
+            <h1>Welcome to Carlos Sainz' Taco Shop!!!</h1>
+
+            <p>You will get to pick many amazing taco dishes and meals made by this smooth operator</p>
+            <ol>
+
+            <li>
+                <a href="#backgroundinfo">History</a>
+            </li>
+            <li>
+                <a href="#Menu">Food Menu</a>
+            </li>
+            <li>
+                <a href="#Table_Menu">Table Menu</a>
+            </li>
+            <li>
+                <a href="#Ordering Food">Table Menu</a>
+            </li>
+            </ol>
+
+            <img src="img/CARLOS.png" alt="Smooth Operator" title ="Smooooooth" height="300" width="300">
+
+
+        </header>
+
+        <hr>
+
+        <section id = "backgroundinfo">
+            <h2>Background Info and Location</h2>
+
+            <p>Carlos Sainz is a Spanish F1 driver for Ferrari. He has blessed us with his amazing tacos and recipes straight from his home in Madrid.</p>
+
+            <p>This is <strong>THE</strong> Chilli Tacos shop, of whom Carlos Sainz is the owner and Chef.</p>
+
+            <img src="img/mexico-city-september-2022-traditional-260nw-2291837829.png" alt="Chilli Tacos(totally legit)" height = 300 width = 500>
+            <p><em>Ignore what it says on the signs, it should be called Chilli Tacos</em></p>
+
+
+            <p>Carlos inherited this shop after the retirment of his father Carlos Sainz Sr. after working at the shop for over 55 years!!</p>
+
+            <img src="img/l (1)-modified.jpg" alt="Chilli Tacos during the 1970s">
+
+            <p><em>The humble beginnings of a soon-to-be great taco shop</em></p>
+
+            <hr>
+
+            
+        </section>
+
+        <hr>
+
+        <section id="Menu">
+
+            <h2>Menu and Items of Interest</h2>
+
+            <p>Chilli Tacos offers a wide array of delicious and mouthwatering cuisines and dishes. </p>
+
+            <ol>
+                <li><strong>Chilli Taco Classic &lt;$4.99&gt;</strong></li>
+                <li><strong>P1 Cheese Nachos &lt;$1.99&gt;</strong></li>
+                <li><strong>Smooooooothie &lt;$2.99&gt;</strong></li>
+                <li><strong>Spicy Operation Taco &lt;$5.99&gt;</strong></li>
+                <li><strong>El Matador Special &lt;$3.99&gt;</strong></li>
+            </ol>
+            
+
+            <p>While the menu is limited in the options it provides, it has earned a great reputation for it's outstanding quality!</p>
+        </section>
+
+
+        <hr>
+        <br>
+
+
+        <section id = "Table_Menu">
+            <table>
+                <caption>Chilly Tacos Menu</caption>
+                <thead>
+                <tr>
+                    <th>Price</th>
+                    <th>Food</th>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                <tr>
+                    <td>
+                        <time datetime="4">3.99$</time>
+                    </td>
+                    <td>El Matador Special</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="3">2.99$</time>
+                    </td>
+                    <td>Smooooooothie</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="6">5.99$</time>
+                    </td>
+                    <td>Spicy Operation</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="5">4.99$</time>
+                    </td>
+                    <td>Chilli Taco Classic</td>
+                </tr>
+                <tr>
+                    <td>
+                        <time datetime="2">1.99$</time>
+                    </td>
+                    <td>P1 Nachos</td>
+                </tr>
+                
+                </tbody>
+
+            </table>
+        </section>
+
+        <hr>
+        <br>
+
+
+        <section id = "Ordering Food">
+            <h2>Order Some Food for your liking!</h2>
+            <p>You can order food using the following method</p>
+            <p>First, register into the website</p>
+
+            <form action="https://httpbin.org/get" method = "get">
+                <fieldset>
+                    <legend>Log in/Sign in</legend>
+                <p>
+
+                <label for="firstName">First Name:</label>
+                <input type="text" name = "firstName" id = "firstName" placeholder="Ahmad" autocomplete="on">
+                </p>
+
+                <p>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" name = "lastName" id="lastName" placeholder="Vettel">
+                </p>
+                <p>
+                <label for="password">Password:</label>
+                <input type="password" name = "password" id="lastName" placeholder="leclerc16">
+                </p>
+                <p>
+                <label for="birth">Date of Birth:</label>
+                <input type="birth" name = "birth" id="birth" placeholder="6-15-2003" pattern="[1-12]{2}[1-31]{2}[1960-2010]{4}">
+                </p>
+                </fieldset>
+
+                <br>
+
+                <p><strong>Choose the food you want to order</strong></p>
+
+                <label for="Food">Choose Food:</label>
+                <select name="Food" id="food">
+                    <optgroup label ="Food">
+                    <option value="Elspecial">El Matador Special</option>
+                    <option value="sm">Smooooooothie</option>
+                    <option value="sp">Chilly Taco Classic</option>
+                    <option value="operation">Spicy Operation</option>
+                    <option value="P1">P1 Nachos</option>
+                    </optgroup>
+
+                </select>
+
+                <br>
+                <br>
+
+                <fieldset>
+                    <legend>Choose Food Option 2:</legend>
+
+                    <p>
+                        <input type="radio" name = "food" id = "elMatador" value = "elMatador">
+                        <label for="elMatador">El Matador Special</label>
+                    </p>
+                    <p>
+                        <input type="radio" name = "food" id = "smoothie" value = "smoothie">
+                        <label for="smoothie">Smooooooothie</label>
+                    </p>
+                    <p>
+                        <input type="radio" name = "food" id = "P1" value = "P1">
+                        <label for="P1">P1 Nachos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name = "food" id = "Spce" value = "Spce">
+                        <label for="Spce">Spicy Operation</label>
+                    </p>
+                    <p>
+                        <input type="radio" name = "food" id = "Spce" value = "Spce">
+                        <label for="Spce">Spicy Operation</label>
+                    </p>
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Please give me any feedback you had on the restaurant and what I can improve</legend>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols = "30" rows = "10" placeholder ="Type your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type = "submit">Submit</button>
+                <button type = "reset">Reset</button>
+
+                
+
+            </form>
+
+
+
+        </section>
+
+
+        <hr>
+        <footer>
+            <p>
+            &lt;&lt;&lt; <a href="about.html">Omar Aqaileh</a>&gt;&gt;&gt;
+            </p>
+            <p>
+                &lt;&lt;&lt; <a href="https://www.carlossainz.es/en/">Carlos Sainz</a>&gt;&gt;&gt;
+            </p>
+        </footer>
+
+        
+        
+    </body>
+
+
+
+</html>
